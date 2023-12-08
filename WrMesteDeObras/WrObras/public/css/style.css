@@ -1,0 +1,663 @@
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;800&display=swap');
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #1E1E1E;
+    font-family: 'Inter', sans-serif;
+}
+
+.site {
+    max-width: 1290px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+:root {
+    --roxo: #6158FE;
+    --cinza: #334155;
+    --roxo-claro: #818CF8;
+    --roxo-escuro: #4539FF;
+}
+
+/*#region topo*/
+
+
+
+.topo {
+    display: flex;
+    background-color: none;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: -120px;
+}
+
+.topo h1 {
+    color: white;
+}
+
+.topo ul {
+    display: flex;
+    align-items: center;
+    height: 90px;
+}
+
+.topo li {
+    list-style: none;
+}
+
+.paginas a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    border-bottom: solid 3px white;
+    padding-bottom: 5px;
+}
+
+.paginas a:hover {
+    border-bottom: solid 3px var(--roxo);
+    padding-bottom: 5px;
+    transition: ease-in .5s;
+}
+
+.button {
+    text-decoration: none;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    border-radius: 8px;
+    background: var(--roxo);
+    padding: 12px;
+    color: white;
+}
+
+.button:hover {
+    background-color: var(--roxo-escuro);
+    transition: ease-in .3s;
+}
+
+.linha {
+    background-color: var(--roxo);
+    width: 1px;
+    height: 33px;
+    margin: auto 20px;
+}
+
+/*#endregion topo*/
+
+/*#region banner */
+
+.banner {
+    background: url(../img/ObraBanner.svg) no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    height: 80vh;
+}
+
+.banner ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    padding: 0;
+}
+
+
+.banner ul li:nth-child(2) {
+    border-radius: 8px;
+    background: var(--cinza);
+    border: solid 1px var(--cinza);
+    padding: 12px;
+    margin-left: 5px;
+}
+
+.banner ul li:nth-child(2):hover {
+    background-color: #293545;
+    transition: ease-in .2s;
+}
+
+.banner a {
+    text-decoration: none;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    color: white;
+}
+
+.banner h3 {
+    color: var(--roxo);
+    text-align: center;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 70%;
+}
+
+.banner h2 {
+    color: white;
+    text-align: center;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 30%;
+}
+
+.banner h4 {
+    width: 50%;
+    margin: auto 25%;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%;
+}
+
+/*#endregion banner */
+
+/*#region servico */
+
+.servico {
+    text-align: center;
+}
+
+.servico h2 {
+    color: #FFF;
+    text-align: center;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%;
+}
+
+
+.caixaServico {
+    display: flex;
+}
+
+.caixaServico div {
+    background-color: var(--roxo);
+    padding: 10px 0 20px 0;
+    border: solid 1px var(--roxo-escuro);
+}
+
+.caixaServico div:hover {
+    box-shadow: 20px 20px 25px rgba(72, 62, 246, 0.80);
+    scale: 1.1;
+    transition: ease-in-out .4s;
+    border-radius: 15px;
+}
+
+
+.caixaServico h3 {
+    color: #FFF;
+    text-align: center;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%;
+}
+
+.caixaServico h4 {
+    color: #FFF;
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%;
+}
+
+.caixaServico a {
+    text-decoration: none;
+    color: #FFF;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%;
+    padding: 10px 20px;
+    background-color: #5349FA;
+    border-radius: 15px;
+}
+
+.caixaServico a:hover {
+    background-color: var(--roxo-escuro);
+    transition: ease-in .2s;
+}
+
+.linhaServico {
+    display: inherit;
+    background-color: white;
+    width: 150px;
+    height: 2px;
+    margin: 10px auto;
+}
+
+/*#endregion servico */
+
+/*#region sobre*/
+
+.sobre {
+    display: flex;
+    padding-top: 120px;
+    height: 70vh;
+}
+
+.textosobre {
+    width: 40%;
+    margin-right: 10%;
+}
+
+.textosobre h2 {
+    color: #FFF;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 110%;
+}
+
+.textosobre h3 {
+    color: #CBD5E1;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    padding-bottom: 20px;
+}
+
+.imgsobre div {
+    flex-direction: row;
+}
+
+/*#endregion sobre*/
+
+/*#region orçamento */
+
+.orcamento {
+    display: flex;
+    padding: 50px;
+}
+
+.textoOrcamento {
+    width: 48%;
+    margin-left: 2%;
+}
+
+.textoOrcamento h2 {
+    color: white;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 110%;
+}
+
+.textoOrcamento span {
+    color: var(--roxo);
+}
+
+.textoOrcamento h3 {
+    color: white;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+}
+
+.certo {
+    color: var(--roxo-claro);
+}
+
+/*#endregion orçamento*/
+
+/*#region depoimento*/
+
+.depoimento {
+    text-align: center;
+}
+
+.depoimento h2 {
+    color: white;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 110%;
+}
+
+.depoimento span {
+    color: var(--roxo);
+}
+
+.carrosselDepoimento {
+    display: flex;
+    text-align: start;
+}
+
+.caixaDepoimento {
+    border-radius: 25px;
+    background-color: #334155;
+    padding: 10px 16px;
+    width: 90% !important;
+}
+
+.slick-dots li button::before {
+    margin-top: 10px;
+    font-size: 13px;
+    color: #94A3B8;
+}
+
+.servicoDepoimento {
+    display: flex;
+}
+
+.servicoDepoimento :nth-child(1) {
+    margin-right: 5px;
+}
+
+.carrosselDepoimento h4 {
+    color: #94A3B8;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%;
+}
+
+.carrosselDepoimento h3 {
+    color: white;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+}
+
+.carrosselDepoimento h5 {
+    color: white;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.carrosselDepoimento h6 {
+    color: #94A3B8;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    margin: 0;
+}
+
+.clienteDepoimento {
+    display: flex;
+}
+
+.clienteDepoimento div {
+    margin-left: 10px;
+}
+
+/*#endregion depoimento*/
+
+/*#region rodape */
+
+.rodape {
+    display: flex;
+    background-color: var(--cinza);
+    padding: 30px 0;
+    margin-top: 90px; ;
+}
+
+.rodape div {
+    width: 30%;
+    text-align: center;
+    margin: 0 5%;
+}
+
+.rodape p {
+    color: white;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    width: 80%;
+    margin: 40px 10%;
+}
+
+.rodape span {
+    background-color: white;
+    width: 4px;
+    height: 300px;
+}
+
+.paginasRodape h2 {
+    margin: 15px;
+    color: #FFF;
+    font-size: 33px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.paginasRodape ul{
+    list-style: none;
+    padding-left: 0;
+}
+
+.paginasRodape hr{
+    background-color: white;
+    width: 110px !important;
+    height: 2px !important;
+}
+
+.paginasRodape a {
+    color: #FFF;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 80%;
+    text-decoration: none;
+    border-bottom: solid 3px var(--cinza);
+}
+
+.paginasRodape a:hover {
+    border-bottom: solid 3px white;
+    transition: ease-in .4s;
+}
+
+.rede-social {
+    display: flex;
+    align-items: center;
+}
+
+.rede-social ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.rede-social a {
+    justify-content: center;
+    text-decoration: none;
+    background-color: rgb(70, 65, 65);
+    border-radius: 60px;
+    display: block;
+    text-indent: -99999px;
+    padding: 22px 30px;
+}
+
+
+.rede-social ul li:nth-child(1) a {
+    background: url(../img/linkedin.svg)no-repeat;
+}
+
+.rede-social ul li:nth-child(2) a {
+    background: url(../img/instagram.svg)no-repeat;
+    margin-top: 4px;
+}
+
+.rede-social ul li:nth-child(3) a {
+    background: url(../img/whatsapp.svg)no-repeat;
+    margin-top: 4px;
+}
+
+.rede-social ul li:nth-child(4) a {
+    background: url(../img/twitter.svg)no-repeat;
+}
+
+
+
+.direitosReservados{
+    display: flex;
+    background-color: black;
+    color: white;
+    justify-content: space-around;
+}
+
+
+/*#endregion rodape */
+
+
+
+/* sobre */
+
+.sobre{
+    justify-content: center;
+    justify-content: space-around;
+    margin-right: 12%;
+}
+
+.sobre, img{
+    margin-left: 12%;
+
+}
+
+h1{
+    margin-left: 3%;
+    color: #fff;
+    font-size: 18px;
+}
+
+.imgHistoria{
+    width: 70%;
+    border-radius: 12%;
+
+}
+
+.historia, p {
+    width: 350px;
+    color: #fff;
+    font-size: 12px;
+    text-align: justify;
+
+
+}
+
+.imgEquipe{
+    width: 70%;
+    border-radius: 12%;
+}
+
+.equipe, p {
+    width: 350px;
+    color: #fff;
+    font-size: 12px;
+    text-align: justify;
+
+
+}
+
+
+.imgProjeto{
+    width: 70%;
+    border-radius: 12%;
+}
+
+h3{
+    margin-right: 14%;
+}
+.projetos, p {
+    width: 350px;
+    color: #fff;
+    font-size: 12px;
+    text-align: justify;
+
+
+}
+
+.projeto{
+    align-items: center;
+    margin-top: -6%;
+}
+
+.projeto, img{
+
+    border-radius: 25%;
+    justify-content: space-around;
+
+}
+
+h3{
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    margin-left: 10%;
+}
+
+.boxSobre{
+    justify-content: space-around;
+    display: flex;
+}
+
+.elemento {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: #1E1E1E;
+    overflow: hidden;
+}
+
+.texto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.elemento:hover .texto {
+    opacity: 1;
+}
+
+
+.mvv{
+    justify-content: center;
+
+}
+
+.mvv p{
+    width: 415px;
+    border-spacing: 2%;
+}
+
+.mvv div {
+    height: 325px;
+    background-color: #334155;
+    padding: 10px 0 20px 0;
+    border: solid 1px #333;
+}
+
+.mvv div:hover {
+    box-shadow: 20px 20px 25px rgba(85, 85, 88, 0.8);
+    scale: 1.1;
+    transition: ease-in-out .4s;
+    border-radius: 15px;
+}
